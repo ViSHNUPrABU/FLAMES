@@ -2,11 +2,11 @@
 #include<string.h>
 #include<ctype.h>
 #include<time.h>
-void delay(int secs)
+void delay(int seconds)
 {
-    int milli_secs=1000*secs;
+    int milli_seconds=1000*seconds;
     clock_t start_time=clock();
-    while (clock()<start_time + milli_secs)
+    while (clock()<start_time + milli_seconds)
         ;
 }
 void _NOT_A_(char not,char* first_name,char* second_name)
@@ -50,7 +50,6 @@ void _FLAMES_()
 
     char flames[6]="FLAMES";
 
-    printf("\nPress Enter to Start:");
     getchar();
 
     printf("\nEnter the first name :");
@@ -140,6 +139,7 @@ void main()
 {
     char ch='y';
     printf("------------------ FLAMES ------------------\n");
+    printf("\nPress Enter to Start:");
     while(ch=='y')
     {
         _FLAMES_();
